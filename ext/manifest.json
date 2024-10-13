@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Puppeteer Automation Extension",
+    "version": "1.0",
+    "description": "Trigger Puppeteer automation from a Chrome extension",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon-16-18.png"
+        }
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://localhost/*"
+    ]
+}
